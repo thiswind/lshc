@@ -42,8 +42,8 @@ echo "----------------------------------------"
 echo ""
 
 echo "#Hard Disk Drive:"
-lsblk
+lsblk | grep -v "loop"
 echo ""
 du -sh /home/*
 echo ""
-sudo fdisk -l |grep Disk
+sudo fdisk -l | grep Disk | grep -v "loop"
