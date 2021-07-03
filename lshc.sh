@@ -13,21 +13,21 @@ echo "# View Linux Server Hardware Configuration #"
 echo "############################################"
 echo ""
 
-echo "CPU:"
-cat /proc/cpuinfo | grep name | cut -f2 -d: | uniq -c
+echo "#CPU:"
+cat /proc/cpuinfo | grep name | cut -f2 -d: | uniq -c | xargs
 
 echo ""
 echo "----------------------------------------"
 echo ""
 
-echo "RAM:"
+echo "#RAM:"
 free -m
 
 echo ""
 echo "----------------------------------------"
 echo ""
 
-echo "GPU:"
+echo "#GPU:"
 gpuinfo="$(lspci | grep -i vga)"
 has_nvida_gpu="$(lspci | grep -i vga | grep -i nvidia)"
 
@@ -41,7 +41,7 @@ echo ""
 echo "----------------------------------------"
 echo ""
 
-echo "Hard Disk Drive:"
+echo "#Hard Disk Drive:"
 lsblk
 echo ""
 du -sh /home/*
