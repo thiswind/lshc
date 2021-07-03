@@ -6,5 +6,5 @@ View Linux server hardware configuration
 attention: only support ubuntu
 
 ```bash
-curl -L https://git.io/JczeS | bash
+curl -L https://raw.githubusercontent.com/thiswind/lshc/main/lshc.sh | bash
 ```
