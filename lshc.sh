@@ -34,7 +34,7 @@ has_nvida_gpu="$(lspci | grep -i vga | grep -i nvidia)"
 echo "${gpuinfo}"
 
 if [ "${has_nvida_gpu}" ]; then
-    nvida-smi
+    nvidia-smi
 fi
 
 echo ""
