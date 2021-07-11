@@ -12,5 +12,5 @@ curl -L https://raw.githubusercontent.com/thiswind/lshc/main/lshc.sh | bash
 国内用户：
 
 ```bash
-curl -L https://raw.githubusercontent.com/thiswind/lshc/main/lshc.sh | bash
+curl -L https://gitee.com/thiswind/lshc/raw/main/lshc.sh | bash
 ```
